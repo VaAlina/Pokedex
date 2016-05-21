@@ -1,3 +1,3 @@
 # Pokedex
 Pokemons viewer. 
-http://jsfiddle.net/VaAlina/wy8X9/259/
+http://jsfiddle.net/VaAlina/wy8X9/260/
