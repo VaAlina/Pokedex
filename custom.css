@@ -1,5 +1,13 @@
+.container, .jumbotron{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 .well{
+	width: 300px;
+	margin: 30px;
     background-color: #f5f5f5;
+	display: inline !important;
+	display: inline-block !important;
 }
 .btn-info{
   width: 96%;
