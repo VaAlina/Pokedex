@@ -1,5 +1,3 @@
-# Pokedex
-Pokemons viewer. 
 var model = {
     link: "http://pokeapi.co/api/v1/pokemon/",
     imgSrc: "http://pokeapi.co/media/img/",
@@ -37,9 +35,11 @@ var model = {
   
 var view = {
     showPokemon: function(counter){
-        $(".col-sm-2").append("<div class='well well-lg text-center' id='"+model.pokemonNationalId+"'><h2>"+
-               model.pokemonName+"</h2><button class='"+model.pokemonType+"'>"+
-               model.pokemonType+"</button><div class='list'><p>Attack: "+model.pokemonAttak+
+        $(".col-sm-12").append("<div class='well well-lg text-center' id='"+model.pokemonNationalId+"'><h2>"+
+               model.pokemonName+"</h2><p data-toggle='collapse' data-target='list"+counter+
+               "'>Show more <span class='glyphicon glyphicon-chevron-down'></span></p>"+
+               "<button class='btn "+model.pokemonType+"'>"+
+               model.pokemonType+"</button><div id='list"+counter+"' class='collapse'><p>Attack: "+model.pokemonAttak+
                "<p><p>Defense: "+model.pokemonDefense+"</p><p>Weight: "+model.pokemonWeight+
                "</p><p>National id: "+model.pokemonNationalId+"</p></div></div>");
     },
